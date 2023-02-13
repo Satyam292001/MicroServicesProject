@@ -1,0 +1,20 @@
+//package com.hotel.exception;
+//
+//import org.springframework.http.HttpStatus;
+//import org.springframework.http.ResponseEntity;
+//import org.springframework.web.bind.annotation.ExceptionHandler;
+//import org.springframework.web.bind.annotation.RestControllerAdvice;
+//
+//import com.hotel.payload.ApiResponsse;
+//
+//@RestControllerAdvice
+//public class GlobalResourceException {
+//
+//	@ExceptionHandler(ResourceNotFound.class)
+//	public ResponseEntity<ApiResponsse> handlerResourceNotFound(ResourceNotFound ex)
+//	{
+//		String message=ex.getMessage();
+//		ApiResponsse response= ApiResponsse.builder().message(message).success(true).status(HttpStatus.NOT_FOUND);
+//		return new ResponseEntity<ApiResponsse>(response,HttpStatus.NOT_FOUND);
+//	}
+//}

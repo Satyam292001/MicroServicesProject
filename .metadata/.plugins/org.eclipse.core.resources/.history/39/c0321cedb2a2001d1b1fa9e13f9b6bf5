@@ -1,0 +1,19 @@
+package com.hotel.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Hotels")
+public class Hotel {
+
+	@Id
+	private String hotelId;
+	@Column(unique = true)
+	private String email;
+	@Column(name="Location")
+	private String location;
+	private String about;
+}

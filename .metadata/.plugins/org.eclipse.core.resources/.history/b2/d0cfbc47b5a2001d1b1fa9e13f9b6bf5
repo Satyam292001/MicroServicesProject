@@ -1,0 +1,17 @@
+package com.hotel.exception;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.hotel.payload.ApiResponsse;
+
+@RestControllerAdvice
+public class GlobalResourceException {
+
+	@ExceptionHandler(ResourceNotFound.class)
+	public ResponseEntity<ApiResponsse> handlerResourceNotFound(ResourceNotFound ex)
+	{
+		
+	}
+}

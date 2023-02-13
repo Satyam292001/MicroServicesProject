@@ -1,0 +1,54 @@
+package com.user.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import org.hibernate.annotations.common.util.impl.LoggerFactory;
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.user.entities.User;
+import com.user.exception.ResourceNotFoundException;
+import com.user.repository.UserRepository;
+import com.user.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	private UserRepository userrepository;
+	
+	@Autowired
+	private RestTemplate resttemplate;
+	
+	@Autowired
+	private Logger logger=(Logger) LoggerFactory.logger(UserServiceImpl.class);
+	
+	@Override
+	public User create(User user) {
+		String randomId=UUID.randomUUID().toString();
+		user.setUserId(randomId);
+		return userrepository.save(user);
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		return userrepository.findAll();
+	}
+
+	@Override
+	public User getSingleUser(String userId) {
+		User user= userrepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("id not exit on server"+userId));
+		
+//		localhost:8086/ratings/users/1db6ceca-93a5-4b87-a5b9-7c97e6e88019
+		ArrayList forobject= resttemplate.getForObject("localhost:8086/ratings/users/1db6ceca-93a5-4b87-a5b9-7c97e6e88019",ArrayList.class);
+		
+		logger.info(forobject);
+		
+		return user;
+	}
+
+}

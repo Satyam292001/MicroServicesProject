@@ -1,0 +1,52 @@
+package com.user.impl;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import org.hibernate.annotations.common.util.impl.LoggerFactory;
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.user.entities.Rating;
+import com.user.entities.User;
+import com.user.exception.ResourceNotFoundException;
+import com.user.repository.UserRepository;
+import com.user.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	private UserRepository userrepository;
+	
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	
+	@Override
+	public User create(User user) {
+		String randomId=UUID.randomUUID().toString();
+		user.setUserId(randomId);
+		return userrepository.save(user);
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		return userrepository.findAll();
+	}
+
+	@Override
+	public User getSingleUser(String userId){
+		User user= userrepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("id not exit on server"+userId));
+			
+		ArrayList<Rating> forObject= restTemplate.getForObject("localhost:8086/ratings/users/e2329c39-fbcf-4ab0-b87d-665fa6675111", ArrayList.class);
+		return user;
+	}
+
+}

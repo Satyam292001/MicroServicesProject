@@ -1,0 +1,13 @@
+package com.hotel.exception;
+
+public class ResourceNotFoundException {
+
+	public ResourceNotFoundException()
+	{
+		super("resource not exit");
+	}
+	public ResourceNotFoundException()
+	{
+		super("resource not exit");
+	}
+}

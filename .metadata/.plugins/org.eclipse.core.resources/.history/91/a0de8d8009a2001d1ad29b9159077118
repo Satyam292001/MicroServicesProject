@@ -1,0 +1,13 @@
+package com.user.exception;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+public class GlobalResouceException {
+
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<ApiResponse> handlerResourceException(ResourceNotFoundException ex)
+	{
+		
+	}
+}

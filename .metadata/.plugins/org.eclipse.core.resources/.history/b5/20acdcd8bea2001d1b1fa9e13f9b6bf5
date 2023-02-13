@@ -1,0 +1,16 @@
+package com.rating.service.services;
+
+import java.util.List;
+
+import com.rating.service.entities.Rating;
+
+public interface RatingService {
+
+	Rating create(Rating rating);
+	
+	List<Rating> getAllRating();
+	
+	Rating getRatingByUserId(String userId);
+	
+	Rating getRatingByHotelId(String hotelId);
+}
