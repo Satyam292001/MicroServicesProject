@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            text-decoration:none;
+            box-sizing:border-box;
+        }
+
+        .form{
+            padding:20px;
+            margin-right:40 rem;
+            width:35%;
+            border:2px;
+            flex-wrap:wrap;
+            cursor :pointer;
+        }
+
+        .form1{
+            border-radius:6px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form">
+        <h3>Registration Form</h3>
+        <fieldset class="form1">
+            <!-- <legend>User Information</legend><br> -->
+            <label for="name"> Enter Your Name</label> <br>
+            <input type="text" id="name" value="name"> <br>
+
+            <label for="lastname">Enter Last Name</label><br>
+            <input type="text"  id="lastname" value="lastname"><br>
+
+            <label for="email">Enter Your Email</label><br>
+            <input type="text" id="email" name="email" value="email"><br>
+
+            <label for="password" >Enter Your Password</label><br>
+            <input type="text" id="password" name="password" value="password "><br>
+
+            <label for="gender"> Gender</label> 
+            <input type="radio" id="gender" name="gender" value="male"> Male 
+            <input type="radio" id="gender" name="gender" value="male "> Female 
+            <input type="radio" id="gender" name="gender" value="male"> Other  <br> <br>
+
+            <label for="textarea">Enter Your Discription : </label><br>
+            <textarea name="textarea" id="textarea" cols="30" rows="3"></textarea> <br><br>
+
+            <label for="Country"> Select Country : </label>
+            <select name="Country" id="Country">
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="indoneshiya">Indoneshiya</option>
+                <option value="america">America</option>
+                <option value="london">Landon</option>
+                <option value="briten">Briten</option>
+                <option value="dubai">Dubai</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Shrilanka">Shrilanka</option>
+            </select>
+
+            <input type="Submit" value="sign-Up">
+            <input type="Reset" value="reset ">
+
+
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

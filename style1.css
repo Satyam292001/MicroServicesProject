@@ -1,0 +1,378 @@
+*{
+    padding :0px;
+    margin:0px;
+    
+}  
+
+ body{
+    background-color: white;
+    flex-wrap:wrap;
+    font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
+    
+   
+} 
+     /* -------------- Top Header Section Css ------------------------------- */
+div.maincontainer{
+   display:grid;
+   grid-template-columns:repeat(7,1fr);
+   grid-template-rows: repeat(1,1fr);
+   column-gap: 0px;
+   text-align:center;
+   padding-left:570px;
+   /* align-items:flex-start; */
+}
+
+.zoom{
+    display :inline-block;
+    transition: transform .2s;  /* Animation*/
+    padding:0px;
+    width: 80px;
+    height:80px;
+    margin: 20px 20px 20px -250px;
+    /* text-align: center;  */
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none; 
+
+}
+a:hover{
+    transform:scal (1.2)
+}
+.zoom:hover{
+        transform:scale(1.2);
+        overflow-x: hidden;
+}
+ h4{
+    font-size:43px;
+    font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
+    padding-left:200px;
+    margin: 30px 0px 0px -820px;
+}
+
+p{
+    margin:0px 0px 28px -279px;
+}
+
+/*  ----------------- Images Div Section --------------------- */
+
+.div1{
+    width: 90%;
+    margin:10px 30px 10px 120px;
+}
+
+span{
+    font-weight: 400px;
+    position: absolute;
+    font-size:23px;
+    color:white;
+    margin:50px 10px 50px 15px;
+    margin-left:32px;
+}
+
+/*  ------------------------------------ Flex  Container Css Part ---------------------------------  */
+.flex-container{
+    display:flex;
+    align-items:flex-start;
+    margin:50px 40px 0px 110px;
+    border: 1px solid white;
+    column-gap: 10px;
+    position:relative;
+    padding:0px 10px 0px 0px;
+
+}
+.item1{
+    width:0px 10px 0px 10px;
+}
+
+.itemlast{
+    margin:0px 40px 0px 10px;
+}
+
+.textoverflow1{
+    position:absolute;
+    font-size:28px;
+    color:black;
+    margin:30px 50px 0px -423px;
+    font-weight:500px;
+}
+
+.textoverflow2{
+    position:absolute;
+    font-size:15px;
+    color:black;
+    margin:70px 50px 0px -420px;
+    font-weight:200px;
+}
+.button1{
+    display:inline-block;
+    position:absolute;
+    margin:290px 80px 10px -418px;
+    cursor:pointer;
+    padding:6px 6px 6px 8px;
+   
+}
+.button1:hover{
+ background-color:black;
+ color:white;
+ overflow:hidden;
+}
+
+.learnMore{
+    display:inline-block;
+    position:absolute;
+    margin:290px 80px 10px -355px;
+    cursor:pointer;
+    padding:10px;
+    text-decoration: underline;
+} 
+.learnMore:hover{
+    display:hidden;
+    cursor:pointer;
+    color:blue;
+}
+
+.Banklogo img{ 
+    width:60px;
+    height: 50px;
+    margin:335px   0px 0px;
+
+}
+.image{
+    position:absolute;
+    margin:
+}
+
+/* --------------------------- On Sale Now Div Tag -------------------------------- */
+
+.text{
+    margin:80px 0px 50px 380px;
+    font-size:42px;
+}
+
+
+/*---------------------------  Flex Product div tag -----------------------------------  */
+
+.container {
+    display:flex;
+    margin:15px 0px 0px 100px;
+    
+
+} 
+
+.para2{
+    font-size:32px;
+    margin:10px 0px 0px 50px ;
+}
+
+
+.textoverflow3{
+    position:absolute;
+    font-size:25px;
+    color:white;
+    margin:48px 50px 0px -279px;
+    font-weight:500px;
+}
+
+.textoverflow4{
+    position:absolute;
+    font-size:15px;
+    color:white;
+    margin:25px 50px 0px -279px;
+    font-weight:200px;
+}
+
+.icon{
+    width:40%;   
+    column-gap:10px;
+}
+
+.button2{
+    position:absolute;
+    justify-content: center;
+    margin:412px 50px 0px -289px;
+    padding:5px;
+}
+.button2:hover{
+    background-color:black;
+    color:white;
+    overflow:hidden;
+
+    
+}
+.lm{
+    position:absolute;
+    margin:418px 50px 0px -215px;
+    font-size:normal;
+    font-weight: 400px;
+    text-decoration: underline;
+    color:white; 
+}
+.lm:hover{
+    color: darkblue;
+
+}
+
+/*--------------------------- Second Flex Container2 Product div tag -----------------------------------  */
+
+
+.container2{
+    display:flex;
+    margin:15px 0px 0px 100px;
+} 
+
+.para3{
+    font-size:32px;
+    margin:70px 0px 0px 50px ;
+}
+
+
+.textoverflow5{
+    position:absolute;
+    font-size:25px;
+    color:black;
+    margin:48px 50px 0px -279px;
+    font-weight:500px;
+}
+
+.textoverflow6{
+    position:absolute;
+    font-size:15px;
+    color:black;
+    margin:25px 50px 0px -279px;
+    font-weight:200px;
+}
+
+.icon{
+    width:40%;   
+    column-gap:10px;
+}
+
+.button2{
+    position:absolute;
+    justify-content: center;
+    margin:408px 50px 0px -289px;
+    padding:5px;
+}
+.button2:hover{
+    background-color:black;
+    color:white;
+    overflow:hidden;
+
+    
+}
+.lm{
+    position:absolute;
+    margin:418px 50px 0px -215px;
+    font-size:normal;
+    font-weight: 400px;
+    text-decoration: underline;
+    color:white; 
+}
+.lm:hover{
+    color: darkblue;
+
+}
+
+.span1{
+    color:red; font-size:14px; margin:345px 0px 50px -270px;
+
+}
+.span2{
+    color:black; font-size:12 ; font-weight:400px;  margin:370px 0px 30px -270px;
+}
+.span3{
+    color:black; font-size:16px; margin:430px 0px 30px -270px;
+}
+.span4{
+    color:red;font-size:14px;margin:345px 0px 50px -270px;
+}
+.span5{
+    color:black; margin:370px 0px 30px -270px;
+}
+.span6{
+    color:black; font-size:16px; margin:430px 0px 30px -270px;
+}
+.span7{
+    color:black; margin:370px 0px 30px -270px;
+}
+.span8{
+    color:black; font-size:16px; margin:430px 0px 30px -270px;
+}
+.span9{
+    color:black; font-size:23px;font-weight:400px; margin:30px 0px 30px -280px;
+}
+.span10{
+    color:black; font-size:16px; margin:10px 0px 0px -280px;
+}
+.span11{
+    color:black; font-size:12 ; font-weight:400px; margin:370px 0px 30px -270px;
+}
+.span12{
+    color:black; font-size:16px; margin:430px 0px 30px -270px;
+}
+.span13{
+    color:black; margin:370px 0px 30px -270px;
+}
+.span14{
+    color:black; font-size:16px; margin:450px 0px 30px -270px;
+}
+.span15{
+    color:red;font-size:14px;margin:345px 0px 50px -270px;
+}
+.span16{
+    color:black; margin:370px 0px 30px -270px;
+}
+.span17{
+    color:black; font-size:16px; margin:430px 0px 30px -270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .div2{
+    
+    height:400px;
+    margin:45px 60px 50px  120px;
+}
+.p1{
+    font-size:20px;
+    position:absolute;
+    margin: 26px 0px 10px 30px;
+}
+button{
+    font-size:20px;
+    padding:8px ;
+   
+}
+
+button:hover{
+    color:white;
+    background-color: black;
+    
+}
+
+.para{
+    margin:7px 0px 0px 120px;    
+    font-size:13px;
+    font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui; ;
+} */
